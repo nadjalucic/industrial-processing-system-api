@@ -8,4 +8,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="SystemConfig\SystemConfig.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SystemConfig\SystemConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
