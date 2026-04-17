@@ -12,4 +12,5 @@ namespace Industrial_Processing_System_API.Models
         public JobType Type { get; set; }
         public string Payload { get; set; } = string.Empty;
         public int Priority { get; set; }
+    }
 }
