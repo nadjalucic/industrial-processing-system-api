@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37203.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Industrial Processing System API", "Industrial Processing System API.csproj", "{DCAB1B6C-517B-4300-A25D-4DF2E9EE93CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCAB1B6C-517B-4300-A25D-4DF2E9EE93CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAB1B6C-517B-4300-A25D-4DF2E9EE93CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAB1B6C-517B-4300-A25D-4DF2E9EE93CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAB1B6C-517B-4300-A25D-4DF2E9EE93CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5023B4D0-90BC-499C-96E6-54C938166D62}
+	EndGlobalSection
+EndGlobal
