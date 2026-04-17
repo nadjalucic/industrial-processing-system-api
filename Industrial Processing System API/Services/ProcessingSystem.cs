@@ -201,7 +201,6 @@ namespace Industrial_Processing_System_API.Services
                 catch (Exception ex)
                 {
                     TimeSpan duration = DateTime.Now - start;
-                    AddStatistics(job, false, true, duration);
 
                     JobFailed?.Invoke(this, new JobEventArgs
                     {
@@ -215,6 +214,7 @@ namespace Industrial_Processing_System_API.Services
 
                     if (attempt == maxAttempts)
                     {
+                        AddStatistics(job, false, true, duration);
                         tcs.TrySetException(ex);
                         return;
                     }
@@ -248,7 +248,7 @@ namespace Industrial_Processing_System_API.Services
 
                 case JobType.IO:
                     int delay = PayloadParser.ParseIoPayload(job.Payload);
-                    await Task.Delay(delay);
+                    await Task.Run(() => Thread.Sleep(delay));
 
                     lock (_randomLock)
                     {
